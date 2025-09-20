@@ -1,8 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://cbowshwkk4pa1"]
+[gd_scene load_steps=6 format=3 uid="uid://cbowshwkk4pa1"]
 
 [ext_resource type="Script" uid="uid://ioa8bjdwixwg" path="res://Scripts/menu.gd" id="1_1rerr"]
+[ext_resource type="FontFile" uid="uid://cq2y4rgww3m58" path="res://Fonts/One Slice.otf" id="2_xhh6f"]
+
+[sub_resource type="FontVariation" id="FontVariation_cayip"]
+base_font = ExtResource("2_xhh6f")
 
 [sub_resource type="FontVariation" id="FontVariation_u4yt8"]
+base_font = SubResource("FontVariation_cayip")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1rerr"]
 bg_color = Color(0.20392157, 0.20392157, 0.20392157, 0)
