@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://4hdepvo6kgm1"]
+
+[ext_resource type="PackedScene" uid="uid://dk4duc6tddhdg" path="res://model3d/BULIDING_CYBER.glb" id="1_chq8o"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0ve3i"]
+
+[node name="Ambiente" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(393.80762, 0, 0, 0, 1, 0, 0, 0, 141.7936, 1.2365723, 1.6958008, -29.503998)
+mesh = SubResource("PlaneMesh_0ve3i")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(26.626768, 0, 0, 0, 26.202478, 0, 0, 0, 25.26497, -261.73874, 4.291977, -79.88507)
+
+[node name="BULIDING_CYBER" parent="MeshInstance3D2" instance=ExtResource("1_chq8o")]
+transform = Transform3D(0.9999998, 0, 0, 0, 1.0000004, 0, 0, 0, 1, 1.6690931, 2.1870558, 0)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(25.171106, 0, 8.239226, 0, 26.202482, 0, -8.683327, 0, 23.883759, -200.14282, 4.291977, -104.82398)
+
+[node name="BULIDING_CYBER" parent="MeshInstance3D3" instance=ExtResource("1_chq8o")]
+transform = Transform3D(0.9999998, 0, 0, 0, 1.0000004, 0, 0, 0, 1, 1.6690931, 2.1870558, 0)
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(26.626768, 0, 0, 0, 26.202478, 0, 0, 0, 25.26497, -164.69333, 4.291977, -165.81816)
+
+[node name="BULIDING_CYBER" parent="MeshInstance3D4" instance=ExtResource("1_chq8o")]
+transform = Transform3D(0.9999998, 0, 0, 0, 1.0000004, 0, 0, 0, 1, 1.6690931, 2.1870558, 0)
