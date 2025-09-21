@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://duqd0o76rxyxh"]
+
+[sub_resource type="AudioStreamMP3" id="AudioStreamMP3_yr5ha"]
+loop = true
+
+[node name="MusicaIntro" type="AudioStreamPlayer"]
+stream = SubResource("AudioStreamMP3_yr5ha")
+parameters/looping = false

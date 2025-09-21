@@ -72,9 +72,9 @@ offset_left = 557.0
 offset_top = 305.0
 offset_right = 917.0
 offset_bottom = 338.0
-max_value = 2.4
-step = 0.1
-value = 1.2
+max_value = 0.4
+step = 0.01
+value = 0.2
 
 [connection signal="pressed" from="ColorRect/VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
 [connection signal="value_changed" from="MasterVolume" to="." method="_on_master_volume_value_changed"]
