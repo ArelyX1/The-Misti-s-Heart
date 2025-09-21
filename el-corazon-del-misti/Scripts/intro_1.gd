@@ -10,3 +10,4 @@ func _ready() -> void:
 	await get_tree().create_timer(47).timeout
 	$AnimationPlayer.play("FadeOut")
 	await get_tree().create_timer(5).timeout
+	get_tree().change_scene_to_file("") #Aca va la direccion del juego principal
