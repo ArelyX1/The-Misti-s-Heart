@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://580t0os1faer"]
+
+[ext_resource type="PackedScene" uid="uid://2p30tj8m17vf" path="res://Scenes/character.tscn" id="1_ebknw"]
+[ext_resource type="PackedScene" uid="uid://4hdepvo6kgm1" path="res://Scenes/ambiente.tscn" id="1_v1kvm"]
+[ext_resource type="PackedScene" uid="uid://b6plbpna1dc85" path="res://Scenes/portal_yanahuara.tscn" id="3_8sr06"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.073641, 0)
+
+[node name="Ambiente" parent="." instance=ExtResource("1_v1kvm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -94.28706, -431.16528)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_ebknw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.029118, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.98704123, 0.16046694, 0, -0.16046694, -0.98704123, 0, 36.483902, 0)
+
+[node name="PortalYanahuara" parent="." instance=ExtResource("3_8sr06")]
+transform = Transform3D(0.014240356, 0.00017541218, -0.9998986, -0.012531064, 0.99992156, -3.0487279e-06, 0.99982023, 0.012529838, 0.014241425, 0, 8.417702, 0)
