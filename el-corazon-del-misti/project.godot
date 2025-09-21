@@ -51,6 +51,7 @@ MusicaMenu="*res://Audio/musica_menu.tscn"
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
+>>>>>>> main
 
 [rendering]
 
