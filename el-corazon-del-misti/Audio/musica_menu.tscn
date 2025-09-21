@@ -5,3 +5,4 @@
 [node name="MusicaMenu" type="AudioStreamPlayer"]
 stream = ExtResource("1_jecp6")
 bus = &"MusicMenu"
+parameters/looping = false
