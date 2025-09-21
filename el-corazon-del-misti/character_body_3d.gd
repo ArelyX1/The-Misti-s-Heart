@@ -24,8 +24,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _set_animation():
-	if velocity.z > 0.1: animated_sprite_3d.flip_h = true
-	elif velocity.z < -0.1: animated_sprite_3d.flip_h = false
+	if velocity.x > 0.1: animated_sprite_3d.flip_h = false
+	elif velocity.x < -0.1: animated_sprite_3d.flip_h = true
 	
 	if velocity: animated_sprite_3d.play("walk")
 	else: animated_sprite_3d.play("idle")

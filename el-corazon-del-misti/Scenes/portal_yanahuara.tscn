@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b6plbpna1dc85"]
+[gd_scene load_steps=6 format=3 uid="uid://b6plbpna1dc85"]
 
 [ext_resource type="PackedScene" uid="uid://csir0gdlfmjqs" path="res://model3d/plaza.glb" id="1_2h0qn"]
 [ext_resource type="PackedScene" uid="uid://cvesn4lip25th" path="res://model3d/stylized_road_cones.glb" id="2_wk1or"]
 [ext_resource type="PackedScene" uid="uid://cm2qmoked1b34" path="res://model3d/pavimento_pompeya_op.glb" id="3_gipix"]
 [ext_resource type="PackedScene" uid="uid://bvc5tc08ciyq6" path="res://model3d/portalYana.glb" id="4_mci54"]
+[ext_resource type="PackedScene" uid="uid://52icdsngn5dq" path="res://model3d/Semaforo.glb" id="5_gipix"]
 
 [node name="PortalYanahuara" type="Node3D"]
 
@@ -77,3 +78,6 @@ transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0,
 
 [node name="portalYana" parent="." instance=ExtResource("4_mci54")]
 transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0, -0.093223296, -155.78369, 11.7332115, -177.37708)
+
+[node name="Semaforo" parent="." instance=ExtResource("5_gipix")]
+transform = Transform3D(1.0255704, 0, -0.81714314, 0, 1.2921687, 0, 0.47703335, 0, 1.7567701, -63.030052, 24.586754, -28.858597)
