@@ -15,6 +15,10 @@ run/main_scene="uid://cbowshwkk4pa1"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://Scripts/global.tscn"
+
 [input]
 
 UP={
@@ -43,3 +47,9 @@ RIGHT={
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 
+[shader_globals]
+
+is3D={
+"type": "bool",
+"value": false
+}

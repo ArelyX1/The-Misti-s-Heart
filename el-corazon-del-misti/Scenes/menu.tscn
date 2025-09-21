@@ -69,6 +69,8 @@ theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_1rerr")
 text = "SALIR"
 
+[node name="MusicaMenu" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="pressed" from="VBoxContainer/Iniciar" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
 [connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]

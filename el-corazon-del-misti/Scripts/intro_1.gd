@@ -1,7 +1,8 @@
 extends Node2D
-var sonidoIntro = preload("res://Audio/esc_1-2_mastered.wav")
-	
+var sonidoIntro = preload("res://Audio/esc_1-2_mastered.wav") # Debe ser .wav, .ogg o .mp3
+var MusicaMenu
 func _ready() -> void:
+	MusicaMenu = $MusicaMenu
 	MusicaMenu.stream = sonidoIntro
 	MusicaMenu.play()
 	$AnimationPlayer.play("FadeIn")
@@ -10,4 +11,4 @@ func _ready() -> void:
 	await get_tree().create_timer(47).timeout
 	$AnimationPlayer.play("FadeOut")
 	await get_tree().create_timer(5).timeout
-	get_tree().change_scene_to_file("") #Aca va la direccion del juego principal
+	get_tree().change_scene_to_file("res://Scenes/MainEscene.tscn") #Aca va la direccion del juego principal
