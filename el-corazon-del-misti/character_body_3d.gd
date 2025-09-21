@@ -14,6 +14,7 @@ var jump_direction: Vector3 = Vector3.ZERO
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	initial_pivot_rotation = pivot.rotation_degrees
+	Dialogic.start("dialogo inicial")
 
 func _input(event):
 	if Global.is3D and event is InputEventMouseMotion:

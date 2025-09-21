@@ -1,7 +1,10 @@
 extends Node2D
 var sonidoIntro = preload("res://Audio/esc_1-2_mastered.wav") # Debe ser .wav, .ogg o .mp3
 var MusicaMenu
+
 func _ready() -> void:
+	Dialogic.Inputs.auto_advance.enabled_forced = true
+	Dialogic.start("narracion")
 	MusicaMenu = $MusicaMenu
 	MusicaMenu.stream = sonidoIntro
 	MusicaMenu.play()
